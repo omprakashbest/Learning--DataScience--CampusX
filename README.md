@@ -2,8 +2,8 @@
 
 Welcome to my little corner of confusion, curiosity, debugging, coffee, and data 📊☕
 
-Hi, I'm Om Prakash — a BCA student currently learning Data Analytics and Data Science step by step.
-This repository is where I practice, fail, learn, fix bugs at 2 AM, and slowly turn data into insights instead of emotional damage.
+Hi, I'm Om Prakash — A BCA student currently learning Data Analytics and Data Science step by step.
+This repository is where I practice, fail, learn and slowly turn data into insights instead of emotional damage.
 
 🎯 About This Repository
 
@@ -21,8 +21,6 @@ Practice Projects
 Mini Exercises & Notes
 
 Basically... everything a future Data Analyst/Data Scientist touches before saying:
-
-"Why is this CSV not loading again?"
 
 📚 What I'm Learning
 🐍 Python for Data Science
