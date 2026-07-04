@@ -22,6 +22,8 @@ class Solution:
                 if ch != '#':
                     res.append(ch)
                 else:
+                    if not res:
+                        continue
                     res.pop()
             return res
         return Compare(s) == Compare(t)
