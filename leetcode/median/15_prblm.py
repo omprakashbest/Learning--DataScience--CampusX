@@ -1,0 +1,45 @@
+"""
+-> Longest Turbulent Subarray
+
+Given an integer array arr, return the length of a maximum size turbulent subarray of arr.
+A subarray is turbulent if the comparison sign flips between each adjacent pair of elements in the subarray.
+
+More formally, a subarray [arr[i], arr[i + 1], ..., arr[j]] of arr is said to be turbulent if and only if:
+
+• For i <= k < j:
+arr[k] > arr[k + 1] when k is odd, and
+arr[k] < arr[k + 1] when k is even.
+
+• Or, for i <= k < j:
+arr[k] > arr[k + 1] when k is even, and
+arr[k] < arr[k + 1] when k is odd.
+
+"""
+
+from typing import List
+
+class Solution:
+    def maxTurbulenceSize(self, arr: List[int]) -> int:
+        l, r = 0, 1
+        res, prev = 1, ""
+
+        while r < len(arr):
+            if arr[r - 1] > arr[r]:
+                if prev == ">":
+                    l = r - 1
+                prev = ">"
+            elif arr[r - 1] < arr[r]:
+                if prev == "<":
+                    l = r - 1
+                prev = "<"
+            else:
+                l = r
+                prev = ""
+
+            res = max(res, r - l + 1)
+            r += 1
+        return res
+    
+obj = Solution()
+arr = [9,4,2,10,7,8,8,1,9]
+print(obj.maxTurbulenceSize(arr))
