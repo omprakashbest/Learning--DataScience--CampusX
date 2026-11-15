@@ -1,5 +1,10 @@
-#Qno.3: Given the root of a binary tree, return the pre_order traversal of it's nodes values. (iterate)
+"""
+-> Binary Tree Pre-order Traversal
+
+Given the root of a binary tree, return the pre_order traversal of it's nodes values. (Iterate)
 # pre_order :- root->left->right
+
+"""
 
 from typing import List
 class TreeNode:
@@ -42,5 +47,4 @@ root.right = TreeNode(3)
 
 sol = Solution()
 print(sol.pre_orderTraversal(root))
-
 
