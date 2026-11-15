@@ -1,7 +1,14 @@
-#Qno.1: Using Binary Searching for finding the x square...O(log n)<- time complexity
+"""
+-> Sqrt(x)
+Given a non-negative integer x, return the square root of x rounded down to the nearest integer. 
+The returned integer should be non-negative as well.
+You must not use any built-in exponent function or operator.
+
+For example, do not use pow(x, 0.5) in c++ or x ** 0.5 in python.
+
+"""
 
 class Solution:
-
     @staticmethod
     def my_sqrt(x):
         if x < 2:
@@ -15,7 +22,7 @@ class Solution:
             
             if mid**2 == x:
                 return mid
-            elif mid**2 < x:
+            elif mid**2 < x:  
                 start = mid + 1
             else:
                 end = mid - 1   
