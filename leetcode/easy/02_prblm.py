@@ -1,12 +1,14 @@
-# Binary Tree Post_order Traversal
-# Qno.2 :- Given the root of a binary tree, return the post_order traversal of it's node's values
+""" 
+-> Binary Tree Post_order Traversal
 
-# Post_order traversal means: LEFT -> RIGHT -> ROOT
-# We visit left subtree first, then right subtree, then the current node
+Given the root of a binary tree, return the post_order traversal of it's node's values.
 
-# Definition for a binary tree node
+Post_order traversal means: LEFT -> RIGHT -> ROOT
+We visit left subtree first, then right subtree, then the current node
+
+Definition for a binary tree node
 from typing import List, Optional
-
+"""
 class TreeNode:
     def __init__(self, val= 0, left= None, right= None):
         self.val = val          # The value stored in this node
@@ -66,5 +68,4 @@ root.right = TreeNode(2)  # Create right child with value 2
 
 sol = Solution()
 print(sol.postOrderTraversal(root))  # Should print: [3, 2, 1]
-
 
