@@ -1,5 +1,15 @@
-# Symmetric Tree
-# Qno.05:-  Given the root of a binary tree , whether it is a mirror of itself(i.e., Symmetric around it's center)?
+"""
+-> Symmetric Tree
+
+Given the root of a binary tree, check whether it is a mirror of itself (i.e., symmetric around its center).
+"""
+
+class TreeNode:
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val  # Node value
+        self.left = left  # Left child
+        self.right = right  # Right child
+        
 
 class Solutions:
     def isSymmetric(self, root)-> bool: # return type is boolean
@@ -22,8 +32,3 @@ class Solutions:
         return dfs(root.left, root.right)
 
 
-class TreeNode:
-    def __init__(self, val=0, left=None, right=None):
-        self.val = val  # Node value
-        self.left = left  # Left child
-        self.right = right  # Right child
