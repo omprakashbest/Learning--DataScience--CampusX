@@ -1,5 +1,12 @@
-# Concatenation of Array
-#   Qno.4:- Given and integer array nums of length n, you want to create an array ans of length 2n where ans[i] == nums[i] and ans[i + n] == nums[i] for   0 <= i < n (0-indexed).?
+"""
+-> Concatenation of Array
+
+Given an integer array nums of length n, you want to create an array ans of length 2n where 
+ans[i] == nums[i] and ans[i + n] == nums[i] for 0 <= i < n (0-indexed).Specifically, ans is the 
+concatenation of two nums arrays.
+
+Return the array ans.
+"""
 
 class Solution:
     def getConcatenation(self, nums):
@@ -13,5 +20,6 @@ class Solution:
                 
         return ans  # Return the concatenated array
 
-# Example: nums = [1,2,3] -> ans = [1,2,3,1,2,3]
-
+obj = Solution()
+nums = [1, 2, 3]
+print(obj.getConcatenation(nums))  
