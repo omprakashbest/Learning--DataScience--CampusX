@@ -1,6 +1,8 @@
-# Minimum Distance between BST Nodes
-# Given the root of a Binary Search Tree (BST), return the minimum difference between the values of any two different nodes in the tree.
+"""
+-> Minimum Distance Between BST Nodes
 
+Given the root of a Binary Search Tree (BST), return the minimum difference between the values of any two different nodes in the tree.
+"""
 
 # In-Order Based (BST)
 class Solution(object):
