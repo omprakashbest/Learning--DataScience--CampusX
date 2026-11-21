@@ -1,5 +1,9 @@
-# Count odd Number in an Interval Range
-# Given two non-negative integer low and high. return the count of odd numbers between low and high (inclusive).
+"""
+-> Count Odd Numbers in an Interval Range
+
+Given two non-negative integers low and high. Return the count of odd numbers between low and high (inclusive).
+"""
+
 class Solution:
     def countOdds(self, low: int, high: int) -> int:
         # Calculate total numbers in range (including both endpoints)
