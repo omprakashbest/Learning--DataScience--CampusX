@@ -1,5 +1,10 @@
-# Contains Duplicate ||
-# Given an integer array nums and an integer k, return true if there are two distinct indices i and j in the array such that nums[i] == nums[j] and abs(i - j) <= k.
+"""
+-> Contains Duplicate II
+
+Given an Integer array nums and an integer k, return true if there are two distinct indices i and j in the array such that 
+nums[i] == nums[j] and abs(i - j) <= k.
+
+"""
 
 class Solution(object):
     # Naive solution using brute force O(n^2)
