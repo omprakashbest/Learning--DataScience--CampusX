@@ -1,8 +1,8 @@
 """
--> Pascal's Triangle || 
+-> Pascal's Triangle ||  
 
-Given an integer rowIndex, return the rowIndexth (0-indexed) row of the Pascal's triangle.
-In Pascal's Triangle, each number is the sum of two numbers directly above it as shown.
+Given an integer rowIndex, return the rowIndexth (0-indexed) row of the Pascal's triangle. 
+In Pascal's Triangle, each number is the sum of two numbers directly above it as shown. 
 
                 1
                1 1
@@ -12,8 +12,8 @@ In Pascal's Triangle, each number is the sum of two numbers directly above it as
 
 """
 
-class Solution:
-    def PascalTriangle(self, rowIndex: int) -> list[int]:
+class Solution:  
+    def PascalTriangle(self, rowIndex: int) -> list[int]: 
         # Initialize the first row of Pascal's triangle 
         res = [1]
 
@@ -26,7 +26,7 @@ class Solution:
             for j in range(len(res)):
                 next_row[j] += res[j]
                 next_row[j + 1] += res[j]
-            res = next_row  # Update res to the newly calculated row
+            res = next_row 
 
-        return res  # Return the row at the specified index
+        return res  
     
