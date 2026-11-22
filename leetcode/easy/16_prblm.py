@@ -5,7 +5,7 @@ Q: Merge Strings ALternately ?
 with word1. if a string is longer than the other, append the additional letters onto the end of the merged 
 string. 
 
-returned the merged string.
+returned the merged string. 
 """
 
 class Solution:
