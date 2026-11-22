@@ -6,7 +6,7 @@ Design a HashSet without using any built-in hash table libraries.
 Implement MyHashSet class:
 • Void add(key) insets the value key into the hashSet.
 • Bool contains(key) Returns whether the value key exists in the HashSet or not.
-• void remove(key) Removes the value key in the HashSet. if key does not exist in the HashSet, do nothing.
+• void remove(key) Removes the value key in the HashSet. if key does not exist in the HashSet, do nothing. 
 
 """
 
@@ -44,6 +44,6 @@ class MyHashSet:
             if curr.next.key == key:
                 return True
             curr = curr.next
-        return False
+        return False 
 
 
