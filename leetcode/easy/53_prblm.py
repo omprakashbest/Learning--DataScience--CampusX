@@ -1,8 +1,7 @@
 """
 -> First Unique Character in a String 
 
-Given a string s, find the first non-repeating character in it and return its index. if it does not exist return
--1.
+Given a string s, find the first non-repeating character in it and return its index. if it does not exist return -1.
 
 """
 
@@ -19,4 +18,4 @@ class Solution:
 
 obj = Solution()
 s = "leetcode"
-print(obj.firstUnique(s))
+print(obj.firstUnique(s)) 
