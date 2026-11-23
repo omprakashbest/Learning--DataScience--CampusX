@@ -14,5 +14,5 @@ class Solution:
         return x == n
 
 obj = Solution()
-n = 16
+n = 14
 print(obj.PowerOfTwo(n))
