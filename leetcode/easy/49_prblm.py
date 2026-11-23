@@ -15,8 +15,6 @@ Example:
 
 from typing import Optional
 
-from git import Tree
-
 class TreeNode:
     # Constructor
     def __init__(self, val=0, left=None, right=None):
@@ -28,7 +26,7 @@ class Solution:
     def rangeSumBST(self, root: Optional[TreeNode], low: int, high: int) -> int :
 
         if not root:
-            return 0
+            return 0 
         
         if root.val > high:
             return self.rangeSumBST(root.left, low, high)
@@ -43,10 +41,10 @@ class Solution:
     
 # Tree Node
 
-root = TreeNode(10)
+root = TreeNode(10) 
 # left side
 root.left = TreeNode(5)
-root.left.left = TreeNode(3)
+root.left.left = TreeNode(3) 
 root.left.right = TreeNode(7)
 
 # right side
@@ -57,4 +55,4 @@ obj = Solution()
 low = 7
 high = 15
 
-print(obj.rangeSumBST(root, low, high))
+print(obj.rangeSumBST(root, low, high)) 
