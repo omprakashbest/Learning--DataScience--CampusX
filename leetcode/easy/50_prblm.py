@@ -1,8 +1,8 @@
 """
--> Leaf-Similar Trees
+-> Leaf-Similar Trees 
 
 Consider all the leaves of a binary tree, from left to right order, the values of those leaves form a leaf value
-sequence.
+sequence. 
 
            3
          /   \
@@ -11,7 +11,7 @@ sequence.
       6   2 9   8
          / \
         7   4
-
+ 
 for example: in the given tree above, the lead value sequence is (6, 7, 4, 9, 8).
 
 Two binary trees are considered leaf-similar if their leaf value sequence is the same.
@@ -20,23 +20,22 @@ Return true if and only if the two given trees with head nodes root1 and root2 a
 
 """
 
-from turtle import right
 from typing import Optional
 
 class TreeNode:
-    def __init__(self, val=0, left=None, right=None):
+    def __init__(self, val=0, left=None, right=None): 
         self.val = val
         self.left = left
         self.right = right
 
 class Solution:
-    def leafSimilar(self, root1: Optional[TreeNode], root2: Optional[TreeNode]) -> bool:
-        def dfs(root, leaf):
-            if root is None:
-                return
+    def leafSimilar(self, root1: Optional[TreeNode], root2: Optional[TreeNode]) -> bool: 
+        def dfs(root, leaf): 
+            if root is None: 
+                return 
             
-            # leaf node
-            if root.left is None and root.right is None:
+            # leaf node 
+            if root.left is None and root.right is None: 
                 leaf.append(root.val)
                 return
             
@@ -44,16 +43,16 @@ class Solution:
             dfs(root.left, leaf)
             dfs(root.right, leaf)
 
-        leaf1, leaf2 = [], []
+        leaf1, leaf2 = [], [] 
         dfs(root1, leaf1)
         dfs(root2, leaf2)
         return leaf1 == leaf2
-    
+     
 # build Tree root-1
 root1 = TreeNode(3)
 
 root1.left = TreeNode(5)
-root1.right = TreeNode(1)
+root1.right = TreeNode(1) 
 
 root1.left.left = TreeNode(6)
 root1.left.right = TreeNode(2)
