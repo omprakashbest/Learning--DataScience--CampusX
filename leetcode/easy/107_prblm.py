@@ -1,5 +1,5 @@
 """
--> Find Missing and Repeated Values
+-> Find Missing and Repeated Values 
 
 You are given a 0-indexed 2D integer matrix grid of size n * n with values in the range [1, n^2]. Each integer
 appears exactly once except a which appears twice and b which is missing. the task is to find the repeating and 
@@ -27,6 +27,6 @@ class Solution:
                 double = num
         return [double , missing]
 
-obj = Solution()
-grid = [[1,3],[2,2]]
-print(obj.findMissingAndRepeatedValues(grid))
+obj = Solution() 
+grid = [[1,3],[2,2]] 
+print(obj.findMissingAndRepeatedValues(grid)) 
