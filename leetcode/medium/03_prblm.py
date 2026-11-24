@@ -8,8 +8,6 @@ Return the minimum number of substring in such a partition.
 
 Note -> that each character should belong to exactly one substring in a partition.
 """
-
-
 class Solution:
     def partitionString(self, s: str) -> int:
         curSet = set()
@@ -23,3 +21,8 @@ class Solution:
             else:
                 curSet.add(c)
         return res
+
+# Example 
+obj = Solution()
+s = "abac"
+print(obj.partitionString(s)) 
