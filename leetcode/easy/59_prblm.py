@@ -5,7 +5,7 @@ Given a valid parentheses string s, return the nesting depth of s. The nesting d
 of nested parentheses.
 
 """
-
+ 
 class Solution:
     def maxDepth(self, s: str) -> int:
         res = 0
@@ -15,7 +15,7 @@ class Solution:
             if c == '(':
                 cur += 1
             elif c == ')':
-                cur -= 1
+                cur -= 1 
             res = max(res, cur)
         return res
 
