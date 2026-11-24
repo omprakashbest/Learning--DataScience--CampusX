@@ -10,7 +10,7 @@ the strings. Otherwise, return false.
 """
 
 class Solution:
-    def areAlmostEqual(self, s1: str, s2: str) -> bool:
+    def areAlmostEqual(self, s1: str, s2: str) -> bool: 
         indexes = [] # i, j
 
         for i in range(len(s1)):
@@ -24,9 +24,9 @@ class Solution:
             i, j = indexes
             return s1[i] == s2[j] and s1[j] == s2[i]
 
-        return len(indexes) == 0
+        return len(indexes) == 0 
 
 obj = Solution()
 s1 = "bank"
 s2 = "kanb"
-print(obj.areAlmostEqual(s1, s2)) 
+print(obj.areAlmostEqual(s1, s2))  
