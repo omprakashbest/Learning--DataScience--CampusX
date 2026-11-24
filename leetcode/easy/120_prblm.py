@@ -9,12 +9,12 @@ Return the minimum number of operations to make all elements of nums divisible b
 class Solution:
     def miniOperations(self, nums: list[int]) -> int:
         res = 0
-        for n in nums:
+        for n in nums: 
             if n % 3:
                 res += 1
         return res
 
 # Example usage
-obj = Solution()
-nums = [1, 2, 3, 4]
-print(obj.miniOperations(nums))
+obj = Solution() 
+nums = [1, 2, 3, 4] 
+print(obj.miniOperations(nums)) 
