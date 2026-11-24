@@ -13,6 +13,7 @@ class Solution:
             # Check if the parity of the current element is the same as the previous element.
             if nums[i] % 2 == nums[i - 1] % 2:
                 return False
+            
         return True
 
 obj = Solution()
