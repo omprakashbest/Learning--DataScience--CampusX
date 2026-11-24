@@ -15,7 +15,7 @@ Given the circular array code and an integer key k, return the decrypted code to
 """
 
 class Solution:
-    def decrypt(self, code: list[int], k: int) -> list[int]:
+    def decrypt(self, code: list[int], k: int) -> list[int]: 
         N = len(code)
         res = [0] * N
 
@@ -33,8 +33,9 @@ class Solution:
                     res[(l - 1) % N] = cur_sum
                 if k < 0:
                     res[(r + 1) % N] = cur_sum
+                    
         return res
 
 obj = Solution()
 code, k = [5,7,1,4], 3
-print(obj.decrypt(code, k))
+print(obj.decrypt(code, k)) 
