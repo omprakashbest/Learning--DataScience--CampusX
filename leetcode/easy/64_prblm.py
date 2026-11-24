@@ -19,7 +19,6 @@ A leaf node is a node that has zero children.
 
 """
 
-from turtle import right
 from typing import Optional
 
 class TreeNode:
