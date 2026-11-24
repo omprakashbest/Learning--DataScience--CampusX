@@ -11,18 +11,18 @@ second bit from the right to get 101, flip the fifth bit from the right (a leadi
 Given two integers start and goal, return the minimum number of but flips to convert start to goal.
 """
 
-class Solution:
-    def minBitFlips(self, start: int, goal: int) -> int:
+class Solution: 
+    def minBitFlips(self, start: int, goal: int) -> int: 
         res = 0
 
-        while start or goal:
-            if (start & 1) != (goal & 1):
+        while start or goal: 
+            if (start & 1) != (goal & 1): 
                 res += 1
             start = start // 2
             goal = goal // 2
 
         return res
 
-obj = Solution()
-start, goal = 10, 7
-print(obj.minBitFlips(start, goal))
+obj = Solution() 
+start, goal = 10, 7 
+print(obj.minBitFlips(start, goal)) 
