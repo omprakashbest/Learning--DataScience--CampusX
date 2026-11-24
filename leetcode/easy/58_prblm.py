@@ -13,10 +13,10 @@ class Solution:
         res = []
         for n in nums2: 
             if n in seen:
-                res.append(n)
+                res.append(n) 
                 seen.remove(n)
         return res
-
+ 
 obj = Solution()
 nums1, nums2 = [4, 9, 5], [9, 4, 9, 8, 4]
 print(obj.intersection(nums1, nums2))   
