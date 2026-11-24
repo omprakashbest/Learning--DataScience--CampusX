@@ -1,7 +1,7 @@
 """
--> Crawler Log Folder 
+-> Crawler Log Folder  
 
-The Leetcode file system keeps a log each time some user performs a change folder operation.
+The Leetcode file system keeps a log each time some user performs a change folder operation. 
 
 The operations are described below:
 • "../" : Move to the parent folder of the current folder. (If you are already in the main folder, remain in 
@@ -16,8 +16,8 @@ The file system starts in the main folder, then the operations in logs are perfo
 Return the minimum number of operations needed to go bak to the main folder after the change folder operations.
 """
 
-class Solution:
-    def minOperations(self, logs: list[str]) -> int:
+class Solution: 
+    def minOperations(self, logs: list[str]) -> int: 
         res = 0
 
         for log in logs:
@@ -32,4 +32,4 @@ class Solution:
 # Example usage:
 obj = Solution()
 logs = ["d1/", "d2/", "../", "d21/", "./"]
-print(obj.minOperations(logs))
+print(obj.minOperations(logs)) 
