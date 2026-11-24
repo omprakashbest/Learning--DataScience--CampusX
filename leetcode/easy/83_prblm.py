@@ -10,9 +10,9 @@ by the null value(See examples).
 from typing import Optional
 
 class Node:
-    def __init__(self, val: Optional[int]=None, children: Optional[list['Node']] = None):
+    def __init__(self, val: Optional[int]=None, children: Optional[list['Node']] = None): 
         self.val = val
-        self.children =  children if children is not None else []
+        self.children =  children if children is not None else [] 
 
 class Solution:
     def postOrder(self, root: 'Node') -> list[int]:
@@ -37,8 +37,8 @@ node4 = Node(4)
 node5 = Node(5)
 node6 = Node(6)
 
-# Connect children
-root.children = [node3, node2, node4]
+# Connect children 
+root.children = [node3, node2, node4] 
 node3.children = [node5, node6]
 
-print(obj.postOrder(root))
+print(obj.postOrder(root)) 
