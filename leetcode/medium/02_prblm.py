@@ -20,3 +20,8 @@ class Solution:
             total += nums[i]
             res = max(res, math.ceil(total / (i + 1)))
         return res
+
+# Example 
+obj = Solution()
+nums = [3, 7, 1, 6]
+print(obj.minimizeArrayValue(nums))
