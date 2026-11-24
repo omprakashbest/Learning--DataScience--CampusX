@@ -17,9 +17,8 @@ Return the resulting array.
 Note: that the operations are applied sequentially, not all at once.
 """
 
-
 class Solution:
-    def applyOperations(Self, nums: list[int]) -> list[int]:
+    def applyOperations(self, nums: list[int]) -> list[int]:
         for i in range(len(nums) - 1):
             if nums[i] == nums[i + 1]:
                 nums[i] *= 2
