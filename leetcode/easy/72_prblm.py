@@ -15,9 +15,6 @@ same seat.
 Note that there may be multiple seats or students in the same position at the beginning.
 """
 
-from math import remainder
-
-
 class Solution:
     def minMovesToSeat(self, seats: list[int], students: list[int]) -> int:
         max_index = max(max(seats), max(students)) + 1
