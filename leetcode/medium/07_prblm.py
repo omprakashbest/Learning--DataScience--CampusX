@@ -20,4 +20,4 @@ class Solution:
     
 # Example usage:
 sol = Solution()
-print(sol.zeroFilledSubarray([1,3,0,0,2,0,0,4]))  # Output: 6
+print(sol.zeroFilledSubarray([1,3,0,0,2,0,0,4]))
