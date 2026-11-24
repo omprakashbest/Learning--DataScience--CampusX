@@ -1,5 +1,5 @@
 """
--> Number of Enclaves :
+-> Number of Enclaves 
 
 You are given a mxn binary matrix grid, where 0 represent a sea cell and 1 represent a land cell.
 
@@ -10,9 +10,9 @@ return the number of land cells in grid for which we cannot walk off the boundar
 of moves.
 """
 
-class Solution:
-    def numEnclaves(self, grid: list[list[int]]) -> int:
-        ROWS, COLS = len(grid), len(grid[0]) # number of rows and columns in the grid
+class Solution:  
+    def numEnclaves(self, grid: list[list[int]]) -> int: 
+        ROWS, COLS = len(grid), len(grid[0]) # number of rows and columns in the grid 
 
         # return num of land cells in the current island.
         def dfs(r, c):
@@ -40,4 +40,4 @@ class Solution:
 
 grid = [[0,0,0,0],[1,0,1,0],[0,1,1,0],[0,0,0,0]]
 sol = Solution()
-print(sol.numEnclaves(grid))
+print(sol.numEnclaves(grid)) 
