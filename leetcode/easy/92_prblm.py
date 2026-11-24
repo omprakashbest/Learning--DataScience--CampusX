@@ -1,23 +1,23 @@
 """
--> Final Array State After K Multiplication Operations Ⅰ
+-> Final Array State After K Multiplication Operations Ⅰ 
 
-You are given an integer array nums, an integer k, and an integer multiplier.
+You are given an integer array nums, an integer k, and an integer multiplier. 
 
 You need to perform k operations on nums. In each operations:
 
-• final the minimum value x in nums. if there are multiple occurrences of the minimum value, select the one that
+• final the minimum value x in nums. if there are multiple occurrences of the minimum value, select the one that 
 appear first.
 
-• Replace an integer array denoting the final state of nums after performing all k operations.
+• Replace an integer array denoting the final state of nums after performing all k operations. 
 """
 
 import heapq
-
-class Solution:
-    def getFinalState(self, nums: list[int], k: int, multiplier: int) -> list[int]:
+ 
+class Solution: 
+    def getFinalState(self, nums: list[int], k: int, multiplier: int) -> list[int]: 
         res = nums[::]
 
-        min_heap = [(val, idx) for idx, val in enumerate(nums)]
+        min_heap = [(val, idx) for idx, val in enumerate(nums)] 
         heapq.heapify(min_heap)
 
         for _ in range(k):
