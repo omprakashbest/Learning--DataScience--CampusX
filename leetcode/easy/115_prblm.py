@@ -11,14 +11,14 @@ numbers (in any order), so peace can return to digitville.
 """
 
 class Solution:
-    def getSneakyNumbers(self, nums: list[int]) -> list[int]:
+    def getSneakyNumbers(self, nums: list[int]) -> list[int]: 
         x = 0
 
-        # XOR all the numbers in the list and the range of numbers from 0 to n - 2
+        # XOR all the numbers in the list and the range of numbers from 0 to n - 2 
         for n in nums:
             x ^= n
 
-        for i in range(len(nums) - 2):
+        for i in range(len(nums) - 2): 
             x ^= i
 
         diff_bit = x & -x
@@ -28,7 +28,7 @@ class Solution:
                 xor1 ^= n
             else:
                 xor2 ^= n
-        for i in range(len(nums) - 2):
+        for i in range(len(nums) - 2): 
             if i & diff_bit:
                 xor1 ^= i
             else:
@@ -36,6 +36,6 @@ class Solution:
 
         return [xor2, xor1] 
 
-obj = Solution()
+obj = Solution() 
 nums = [0, 1, 1, 0]
-print(obj.getSneakyNumbers(nums))  
+print(obj.getSneakyNumbers(nums))   
