@@ -1,5 +1,5 @@
 """
--> Number fo closed Island :
+-> Number of closed Island :
 
 Given a 2D grid consists of 0s (land) and 1s (water).  An island is a maximal 4-directionally connected group of 0s and a closed island is an island totally (all left, top, right, bottom) surrounded by 1s.
 
@@ -30,12 +30,11 @@ class Solution:
                     res += dfs(r, c)
         return res
     
-sol = Solution()
-
+obj = Solution()
 grid = [
  [1,1,1,1],
  [1,0,0,1],
  [1,0,0,1],
  [1,1,1,1]
 ]
-print(sol.closedIsland(grid))
+print(obj.closedIsland(grid))
