@@ -8,13 +8,13 @@ only set bits
 
 """
 
-class Solution:
-    def smallestNumber(self, n: int) -> int:
-        res = 1
-        while n > res:
-            res = (res << 1) | 1
-        return res
+class Solution: 
+    def smallestNumber(self, n: int) -> int: 
+        res = 1 
+        while n > res: 
+            res = (res << 1) | 1 
+        return res 
 
-obj = Solution()
+obj = Solution() 
 n = 5
-print(obj.smallestNumber(n))
+print(obj.smallestNumber(n)) 
