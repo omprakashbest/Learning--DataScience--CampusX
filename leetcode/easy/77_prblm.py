@@ -8,18 +8,18 @@ Return the sorted array.
 """
 
 
-from collections import Counter
+from collections import Counter 
 
 class Solution:
-    def frequencySort(self, nums: list[int]) -> list[int]:
+    def frequencySort(self, nums: list[int]) -> list[int]: 
         count = Counter(nums)
 
-        def custom_sort(n):
+        def custom_sort(n): 
             return (count[n], -n)
     
-        nums.sort(key=custom_sort)
+        nums.sort(key=custom_sort) 
         return nums
 
 obj = Solution()
 nums = [1, 1, 2, 2, 2, 3]
-print(obj.frequencySort(nums))    
+print(obj.frequencySort(nums))     
