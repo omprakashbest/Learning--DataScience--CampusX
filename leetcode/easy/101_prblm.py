@@ -12,12 +12,12 @@ A.length] for every valid index i.
 """
 
 class Solution:
-    def check(self, nums: list[int]) -> bool:
+    def check(self, nums: list[int]) -> bool: 
         count = 1
         N = len(nums)
 
-        for i in range(1, 2 * N):
-            if nums[(i - 1) % N] <= nums[i % N]:
+        for i in range(1, 2 * N): 
+            if nums[(i - 1) % N] <= nums[i % N]: 
                 count += 1
             else:
                 count = 1
@@ -25,8 +25,8 @@ class Solution:
             if count == N:
                 return True
             
-        return N == 1
+        return N == 1 
 
 obj = Solution()
 nums = [3, 4, 5, 1, 2]
-print(obj.check(nums)) # Output: True
+print(obj.check(nums)) 
