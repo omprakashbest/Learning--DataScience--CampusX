@@ -7,12 +7,12 @@ consistent if all characters in the string appear in the string allowed.
 Return the number of consistent strings in the array words.
 """
 
-class Solution:
-    def countConsistentStrings(self, allowed: str, words: list[str])-> int:
+class Solution: 
+    def countConsistentStrings(self, allowed: str, words: list[str])-> int: 
         allowed = set(allowed)
 
         res = len(words)
-        for w in words:
+        for w in words: 
             for ch in w:
                 if ch not in allowed:
                     res -= 1
