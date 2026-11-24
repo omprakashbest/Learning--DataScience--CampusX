@@ -31,5 +31,5 @@ class Solution:
         return -1
 
 obj = Solution()
-nums = [3, 6, 7, 7, 0]
-print(obj.specialArray(nums))
+nums = [3, 6, 7, 7, 0] 
+print(obj.specialArray(nums)) 
