@@ -10,9 +10,9 @@ Return the minimum number of operations required to make the sum of the array di
 """
 
 class Solution:
-    def minOperations(self, nums: list[int], k: int) -> int:
-        return sum(nums) % k
+    def minOperations(self, nums: list[int], k: int) -> int: 
+        return sum(nums) % k 
 
 obj = Solution()
-nums, k = [3, 9, 7], 5
-print(obj.minOperations(nums, k))
+nums, k = [3, 9, 7], 5 
+print(obj.minOperations(nums, k)) 
