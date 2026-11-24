@@ -11,11 +11,11 @@ However, if num1 = 4 and num2 = 5, after one operation, num1 = 4 and num2 = 1.
 Return the number of operations required to make either num1 = 0 or num2 = 0.
 """
 
-class Solution:
-    def countOperations(self, num1: int, num2: int) -> int:
+class Solution: 
+    def countOperations(self, num1: int, num2: int) -> int: 
         res = 0
 
-        while num1 and num2:
+        while num1 and num2: 
             if num1 >= num2:
                 res += num1 // num2
                 num1 %= num2
@@ -25,6 +25,6 @@ class Solution:
         return res
 
 # Example usage:
-obj = Solution()
+obj = Solution() 
 num1, num2 = 2, 3
-print(obj.countOperations(num1, num2))
+print(obj.countOperations(num1, num2)) 
