@@ -10,17 +10,17 @@ For example, a string such as "substitution" could be abbreviated as (but not li
 • "sub4u4" ("sub stit u tion")
 • "12" ("substitution")
 • "su3i1u2on" ("su bst i t u ti on")
-• "substitution" (no substrings replaced)
+• "substitution" (no substrings replaced) 
 
-The following are not valid abbreviations:
+The following are not valid abbreviations: 
 
-• "s55n" ("s ubsti tutio n", the replaced substrings are adjacent)
+• "s55n" ("s ubsti tutio n", the replaced substrings are adjacent) 
 • "s010n" (has leading zeros)
-• "s0ubstitution" (replaces an empty substring)
+• "s0ubstitution" (replaces an empty substring) 
 
-Given a string word and an abbreviation abbr, return whether the string matches with the given abbreviation.
+Given a string word and an abbreviation abbr, return whether the string matches with the given abbreviation. 
 
-A substring is a contiguous sequence of characters within a string.
+A substring is a contiguous sequence of characters within a string. 
 """
 
 
@@ -44,4 +44,4 @@ class Solution:
 obj = Solution()
 word = "internationalization"
 abbr = "i12iz4n"
-print(obj.validWordAbbreviation(word, abbr))
+print(obj.validWordAbbreviation(word, abbr)) 
