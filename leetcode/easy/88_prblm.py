@@ -1,14 +1,14 @@
 """
--> Minimum String Length after removing Substrings
+-> Minimum String Length after removing Substrings 
 
-You are given a string a consisting only of uppercase English letters.
+You are given a string a consisting only of uppercase English letters. 
 
-You can are apply some operations to this string where, in one operation, you can remove any  occurrence of one 
-of ht substrings "AB" or "CD" from s.
+You can are apply some operations to this string where, in one operation, you can remove any  occurrence of one  
+of ht substrings "AB" or "CD" from s. 
 
-Return the minimum possible length of the resulting string that you can obtain.
+Return the minimum possible length of the resulting string that you can obtain. 
 
-Note that the string concatenates after removing the substring and could produce new "AB" or "CD" substrings.
+Note that the string concatenates after removing the substring and could produce new "AB" or "CD" substrings. 
 """
 
 class Solution:
