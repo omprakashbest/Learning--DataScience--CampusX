@@ -10,10 +10,11 @@ In one operation, you can recolor a white block such that it becomes a black blo
 
 Return the minimum number of operations needed such that there is at least one occurrence of k
 consecutive black blocks.
+
 """
 
-class Solution:
-    def minimumRecolor(self, blocks: str, k: int) -> int:
+class Solution: 
+    def minimumRecolor(self, blocks: str, k: int) -> int: 
         recolor = 0
         l = 0
         res = k
@@ -26,8 +27,8 @@ class Solution:
                 if blocks[l] == 'W':
                     recolor -= 1
                 l += 1
+                
         return res
-
 
 obj = Solution()
 blocks = "WBBWWBBWBW"
