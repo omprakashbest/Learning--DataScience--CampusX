@@ -19,4 +19,9 @@ class Solution:
             else:
                 stack .append(ch)
         return "".join(stack)
+
+# Example 
+obj = Solution()
+s = "leet**cod*e"
+print(obj.removeStars(s))
             
