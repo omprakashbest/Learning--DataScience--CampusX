@@ -9,8 +9,8 @@ for each index i, names[i] and heights[i] denote the name and height of the ith 
 Return names sorted in descending order by the people's heights.
 """
 
-class Solution:
-    def sortPeople(self, names: list[str], heights: list[int]) -> list[str]:
+class Solution: 
+    def sortPeople(self, names: list[str], heights: list[int]) -> list[str]: 
         height_to_name = {}
         for h, n in zip(heights, names):
             height_to_name[h] = n
@@ -21,6 +21,6 @@ class Solution:
         return res
 
 obj = Solution()
-names = ["Mary", "John", "Emma"]
+names = ["Mary", "John", "Emma"] 
 heights = [180, 165, 170]
-print(obj.sortPeople(names, heights))
+print(obj.sortPeople(names, heights)) 
