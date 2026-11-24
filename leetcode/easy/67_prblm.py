@@ -12,9 +12,9 @@ class Solution:
     def stringScore(self, s: str) -> int:
         score = 0
         for i in range(len(s) - 1):
-            score += abs(ord(s[i]) - ord(s[i + 1]))
-        return score
+            score += abs(ord(s[i]) - ord(s[i + 1])) 
+        return score  
 
-obj = Solution()
+obj = Solution() 
 # Example usage:
-print(obj.stringScore("hello"))
+print(obj.stringScore("hello")) 
