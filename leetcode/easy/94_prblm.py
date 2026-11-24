@@ -1,5 +1,5 @@
 """
--> Final Prices With a Special Discount in a Shop
+-> Final Prices With a Special Discount in a Shop 
 
 You are given an integer array prices where prices[i] is the price of the ith item in a shop.
 
@@ -11,9 +11,8 @@ Return an integer array answer where answer[i] is the final price you will pay f
 considering the special discount.
 
 """
-
-class Solution:
-    def finalPrices(self, prices: list[int])-> list[int]:
+class Solution: 
+    def finalPrices(self, prices: list[int])-> list[int]: 
         res = [p for p in prices]
 
         stack = [] # indexes, values are increasing order
@@ -24,8 +23,9 @@ class Solution:
                 res[j] -= prices[i]
 
             stack.append(i)
+            
         return res
-
+ 
 obj = Solution()
 prices = [8,4,6,2,3]
-print(obj.finalPrices(prices))
+print(obj.finalPrices(prices)) 
