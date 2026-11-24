@@ -28,3 +28,10 @@ class Solution:
                     l = m + 1
             res.append(len(potions) - idx)
         return res
+    
+# Example usage:
+obj = Solution()
+spells = [10, 20, 30]
+potions = [1, 2, 3, 4, 5]
+success = 50
+print(obj.successfulPairs(spells, potions, success))
