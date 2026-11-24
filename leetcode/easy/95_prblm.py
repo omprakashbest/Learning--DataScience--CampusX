@@ -10,7 +10,7 @@ right substring.
 """
 
 class Solution:
-    def maxScore(self, s: str) -> int:
+    def maxScore(self, s: str) -> int: 
         zero = 0
         ones = s.count('1')
         max_score = 0
@@ -23,8 +23,8 @@ class Solution:
 
             max_score = max(max_score, zero + ones)
 
-        return max_score
+        return max_score 
 
-obj = Solution()
+obj = Solution() 
 s = "011101"
-print(obj.maxScore(s))
+print(obj.maxScore(s)) 
