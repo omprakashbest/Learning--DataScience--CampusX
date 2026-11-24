@@ -8,14 +8,14 @@ column.
 
 """
 
-class Solution:
-    def luckyNumbers(self, matrix: list[list[list[int]]]) -> list[int]:
+class Solution: 
+    def luckyNumbers(self, matrix: list[list[list[int]]]) -> list[int]: 
         ROWS, COLS = len(matrix), len(matrix[0])
         res = []
 
         row_min = set()
         for r in range(ROWS):
-            row_min.add(min(matrix[r]))
+            row_min.add(min(matrix[r])) 
         col_max = set()
         for c in range(COLS):
             cur_max = matrix[0][c]
@@ -27,9 +27,9 @@ class Solution:
             if n in col_max:
                 res.append(n)
 
-        return res
+        return res 
 
 obj = Solution()
 # Example usage:
-matrix = [[3,7,8],[9,11,13],[15,16,17]]
-print(obj.luckyNumbers(matrix))  
+matrix = [[3,7,8],[9,11,13],[15,16,17]] 
+print(obj.luckyNumbers(matrix))   
