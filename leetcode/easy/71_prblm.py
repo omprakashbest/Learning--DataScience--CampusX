@@ -1,6 +1,6 @@
-"""
--> Relative Sort Array
-
+""" 
+-> Relative Sort Array 
+ 
 Given two arrays arr1 and arr2, the elements of arr2 are distinct, and all elements in arr2 are also in arr1.
 
 Sort the elements of arr1 such that the relative ordering of items in arr1 are the same as in arr2. 
@@ -12,7 +12,7 @@ from collections import defaultdict
 class Solution:
     def relativeSortArray(self, arr1: list[int], arr2: list[int]) -> list[int]:
         arr2_set = set(arr2)
-        # Create a dictionary to count occurrences of each number in arr1
+        # Create a dictionary to count occurrences of each number in arr1 
         arr1_count = defaultdict(int)
         end = []
 
