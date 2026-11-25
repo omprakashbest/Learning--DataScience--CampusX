@@ -10,10 +10,10 @@ A subarray may only include each element of the fixed buffer nums at most once. 
 nums[i + 1], ..., nums[j], there does not exist i <= k1, k2 <= j with k1 % n == k2 % n.
 """
 
-class Solution:
-    def maxSubarraySumCircular(self, nums: list[int])-> int:
+class Solution: 
+    def maxSubarraySumCircular(self, nums: list[int])-> int: 
         curMax, curMin = 0, 0
-        maxSum, minSum = nums[0], nums[0]
+        maxSum, minSum = nums[0], nums[0] 
         res = 0
 
         for n in nums:
@@ -23,8 +23,8 @@ class Solution:
             maxSum = max(maxSum, curMax)
             minSum = min(minSum, curMin)
 
-        return max(maxSum, res - minSum) if maxSum > 0 else maxSum
+        return max(maxSum, res - minSum) if maxSum > 0 else maxSum 
 
-obj = Solution()
-nums = [1,-2,3,-2]
-print(obj.maxSubarraySumCircular(nums))
+obj = Solution() 
+nums = [1,-2,3,-2]  
+print(obj.maxSubarraySumCircular(nums)) 
