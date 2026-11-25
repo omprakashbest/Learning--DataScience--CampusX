@@ -13,10 +13,10 @@ A clear path in a binary matrix is a path from the top-left cell(i.e., (0, 0)) t
 The length of a clear path is the number of visited cells of this path.
 """
 
-from collections import deque
+from collections import deque 
 
 class Solution:
-    def shortestPathBinaryMatrix(self, grid: list[list[int]]) -> int:
+     def shortestPathBinaryMatrix(self, grid: list[list[int]]) -> int:  
         N = len(grid)
         q = deque([(0, 0, 1)]) # r, c, length
         visit = set() 
@@ -26,16 +26,16 @@ class Solution:
 
         while q:
             r, c, length = q.popleft()
-            if min(r, c) < 0 or max(r, c) >= N or grid[r][c]:
+            if min(r, c) < 0 or max(r, c) >= N or grid[r][c]: 
                 continue
             if r == N - 1 and c == N - 1:
                 return length
-            for dr, dc in direct:
+            for dr, dc in direct: 
                 if (r + dr, c + dc) not in visit:
-                    q.append((r + dr, c + dc, length + 1))
-                    visit.add((r + dr, c + dc))
-        return -1
+                    q.append((r + dr, c + dc, length + 1)) 
+                    visit.add((r + dr, c + dc)) 
+        return -1 
 
-obj = Solution()
-grid = [[0,1],[1,0]]
-print(obj.shortestPathBinaryMatrix(grid))
+obj = Solution() 
+grid = [[0,1],[1,0]] 
+print(obj.shortestPathBinaryMatrix(grid)) 
