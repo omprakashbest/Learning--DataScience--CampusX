@@ -9,14 +9,14 @@ Basically, the deletion can be divided into two stages.
 2. if the node is found, delete node.
 """
 
-class TreeNode:
-    def __init__(self, val=0, left=None, right=None):
+class TreeNode: 
+    def __init__(self, val=0, left=None, right=None): 
         self.val = val 
         self.left = left
         self.right = right
 
 class Solution:
-    def deleteNode(self, root: TreeNode | None, key: int) -> TreeNode | None:
+    def deleteNode(self, root: TreeNode | None, key: int) -> TreeNode | None: 
         if not root:
             return root
 
@@ -45,13 +45,13 @@ obj = Solution()
 root = TreeNode(5)
 # left child
 root.left = TreeNode(3)
-root.left.left = TreeNode(2)
-root.left.right = TreeNode(4)
+root.left.left = TreeNode(2) 
+root.left.right = TreeNode(4) 
 # right child
 root.right = TreeNode(6)
-root.right.right = TreeNode(7)
+root.right.right = TreeNode(7) 
 key = 3
 
-result = obj.deleteNode(root, key)
+result = obj.deleteNode(root, key) 
 print(result.left.val)        
-print(result.left.left.val)        
+print(result.left.left.val)         
