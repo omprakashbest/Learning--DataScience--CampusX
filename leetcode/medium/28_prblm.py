@@ -10,20 +10,20 @@ is |x0 - x1| + |y0 - y1|.
 
 """
 
-from collections import deque
+from collections import deque 
 
 class Solution:
-    def maxDistance(self, grid: list[list[int]]) -> int:
+    def maxDistance(self, grid: list[list[int]]) -> int: 
         N = len(grid)
         q = deque()
 
         for r in range(N):
             for c in range(N):
                 if grid[r][c]:
-                    q.append((r, c))
+                    q.append((r, c)) 
 
         res = -1
-        direct = [(1, 0), (-1, 0), (0, 1), (0, -1)]
+        direct = [(1, 0), (-1, 0), (0, 1), (0, -1)] 
         while q:
             r, c = q.popleft()
             res = grid[r][c]
@@ -32,9 +32,9 @@ class Solution:
                 newR, newC = r + dr, c + dc
                 if (min(newR, newC) >= 0 and max(newR, newC) < N and grid[newR][newC] == 0):
                     q.append((newR, newC))
-                    grid[newR][newC] = grid[r][c] + 1
-        return res -1 if res > 1 else -1
+                    grid[newR][newC] = grid[r][c] + 1 
+        return res -1 if res > 1 else -1  
 
-obj = Solution()
-grid = [[1,0,1],[0,0,0],[1,0,1]]
-print(obj.maxDistance(grid))
+obj = Solution() 
+grid = [[1,0,1],[0,0,0],[1,0,1]] 
+print(obj.maxDistance(grid)) 
