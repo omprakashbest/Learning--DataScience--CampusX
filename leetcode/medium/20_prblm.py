@@ -14,7 +14,7 @@ with O(1) extra memory.
 """
 
 class Solution:
-    def RemoveDuplicates(self, nums: list[int]) -> int:
+    def RemoveDuplicates(self, nums: list[int]) -> int: 
         l, r = 0, 0
 
         while r < len(nums):
@@ -28,8 +28,8 @@ class Solution:
                 l += 1
             r += 1
         return l
-    
+     
 obj = Solution()
-nums = [1, 1, 1, 2, 2, 3]
-print(obj.RemoveDuplicates(nums))
+nums = [1, 1, 1, 2, 2, 3 ]
+print(obj.RemoveDuplicates(nums)) 
      
