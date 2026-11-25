@@ -16,10 +16,8 @@ arr[k] < arr[k + 1] when k is odd.
 
 """
 
-from typing import List
-
 class Solution:
-    def maxTurbulenceSize(self, arr: List[int]) -> int:
+    def maxTurbulenceSize(self, arr: list[int]) -> int:
         l, r = 0, 1
         res, prev = 1, ""
 
@@ -39,7 +37,7 @@ class Solution:
             res = max(res, r - l + 1)
             r += 1
         return res
-    
+     
 obj = Solution()
 arr = [9,4,2,10,7,8,8,1,9]
-print(obj.maxTurbulenceSize(arr))
+print(obj.maxTurbulenceSize(arr)) 
