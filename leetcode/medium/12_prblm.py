@@ -6,14 +6,12 @@ postorder is the postorder traversal of the same tree, construct and return the 
 
 """
 
-from git import Optional
-
+from typing import Optional
 class TreeNode:
     def __int__(self, val=0, left=None, right=None):
         self.val = val
         self.left = left
         self.right = right
-
 
 class Solution:
     def buildTree(self, inorder: list[int], postorder: list[int]) -> Optional[TreeNode]:
@@ -30,5 +28,6 @@ class Solution:
             root.left = helper(l, idx-1)
             return root
 
-        return helper(0, len(inorder) - 1)    
+        return helper(0, len(inorder) - 1)  
+
     
