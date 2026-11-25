@@ -1,15 +1,15 @@
-"""
+""" 
 -> Find Peak Element
 
-A peak element is an element that is strictly greater than its neighbors.
+A peak element is an element that is strictly greater than its neighbors. 
 
-Given a 0-indexed integer array nums, find a peak element, and return its index. if the array contains multiple
+Given a 0-indexed integer array nums, find a peak element, and return its index. if the array contains multiple 
 peaks, return the index to any of the peaks.
-You may imagine that nums[-1] = nums[n] = -∞. You must write an algorithm that runs in O(log n) time.
+You may imagine that nums[-1] = nums[n] = -∞. You must write an algorithm that runs in O(log n) time. 
 
 """
 class Solution:
-    def findPeakElement(self, nums: list[int]) -> int:
+    def findPeakElement(self, nums: list[int]) -> int: 
         l, r = 0, len(nums) - 1
 
         while l <= r:
@@ -23,4 +23,8 @@ class Solution:
             elif m < len(nums) - 1 and nums[m] > nums[m + 1]:
                 l = m + 1
             else:
-                return m
+                return m 
+            
+obj = Solution()
+nums = [1, 2, 3, 1]
+print(obj.findPeakElement(nums))
