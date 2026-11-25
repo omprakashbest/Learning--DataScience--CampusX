@@ -13,7 +13,9 @@ At the end of the game, there is at most one stone left.
 
 Return the smallest possible weight of the left stone. If there are no stones left, return 0.
 """
+
 import math
+
 class Solution:
     def lastStoneWeight(self, stones: list[int]) -> int:
         stoneSum = sum(stones)
@@ -31,3 +33,7 @@ class Solution:
         
         dp = {}
         return dfs(0, 0)
+
+obj = Solution()
+store = [2,7,4,1,8,1]
+print(obj.lastStoneWeight(store))
