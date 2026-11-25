@@ -19,7 +19,7 @@ class Solution:
                 count[ord(c) - ord("a")] += 1
             
             res[tuple(count)].append(s)
-        return res.values()
+        return list(res.values())
     
 obj = Solution()
 strs = ["eat","tea","tan","ate","nat","bat"]
