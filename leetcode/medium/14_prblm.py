@@ -1,5 +1,5 @@
 """
--> Construct Quad Tree
+-> Construct Quad Tree 
 
 Given a n*n matrix grid of 0's and 1's only. We want to represent grid with a Quad-Tree
 Return the root of the Quad-Tree representing grid.
@@ -21,7 +21,7 @@ class Node {
     public Node bottomRight;
 }
 
-We can construct a Quad-Tree from a two-dimensional area using the following steps:
+We can construct a Quad-Tree from a two-dimensional area using the following steps: 
 
 1. If the current grid has the same value (i.e all 1's or all 0's) set isLeaf True and set val to the value of 
 the grid and set the four children to Null and stop.
@@ -34,13 +34,13 @@ grid into four sub-grids as shown in the photo.
 """
 
 class Node:
-    def __init__(self, val, isLeaf, topLeft=None, topRight=None, bottomLeft=None, bottomRight=None):
+    def __init__(self, val, isLeaf, topLeft=None, topRight=None, bottomLeft=None, bottomRight=None):  
         self.val = val
         self.isLeaf = isLeaf
         self.topLeft = topLeft
         self.topRight = topRight
-        self.bottomLeft = bottomLeft
-        self.bottomRight = bottomRight
+        self.bottomLeft = bottomLeft 
+        self.bottomRight = bottomRight 
 
 class Solution:
     def construct(self, grid: list[list[int]]) -> 'Node':
@@ -76,6 +76,5 @@ grid = [[1,1,1,1,0,0,0,0],[1,1,1,1,0,0,0,0],
         [1,1,1,1,0,0,0,0],[1,1,1,1,0,0,0,0]]
 
 root = obj.construct(grid)
-
 print(root.isLeaf) 
 print(root.topLeft.val)
