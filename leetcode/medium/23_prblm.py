@@ -17,11 +17,10 @@ Return a boolean array answer, where answer[j] is the answer to the jth query.
 """
 
 
-from typing import List
 from collections import defaultdict
 
 class Solution:
-    def checkIfPrerequisite(self, numCourses: int, prerequisites: List[List[int]], queries: List[List[int]]) -> List[bool]:
+    def checkIfPrerequisite(self, numCourses: int, prerequisites: list[list[int]], queries: list[list[int]]) -> list[bool]: 
         adj = defaultdict(list)
         for prereq, crs in prerequisites:
             adj[crs].append(prereq)
@@ -38,13 +37,13 @@ class Solution:
         for crs in range(numCourses):
             dfs(crs)
 
-        res = []
+        res = [] 
         for u, v in queries:
             res.append(u in prereqMap[v])
         return res
 
-obj = Solution()
+obj = Solution() 
 numCourses = 2
-prerequisites = [[1,0]]
+prerequisites = [[1,0]] 
 queries = [[0,1],[1,0]]
-print(obj.checkIfPrerequisite(numCourses, prerequisites, queries))
+print(obj.checkIfPrerequisite(numCourses, prerequisites, queries)) 
