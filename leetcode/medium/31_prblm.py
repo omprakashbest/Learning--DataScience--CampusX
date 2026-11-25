@@ -8,23 +8,23 @@ Notice that here may exist multiple valid ways for the insertion, as long as the
 insertion. You can return any of them.
 """
 
-class TreeNode:
+class TreeNode: 
     def __init__(self, val=0, left=None, right=None):
         self.val = val
         self.left = left
         self.right = right
         
 class Solution:
-    def insertIntoBST(self, root: TreeNode | None, val: int) -> TreeNode | None:
+    def insertIntoBST(self, root: TreeNode | None, val: int) -> TreeNode | None: 
         if not root:
             return TreeNode(val)
         if val > root.val:
-            root.right = self.insertIntoBST(root.right, val)
+            root.right = self.insertIntoBST(root.right, val) 
         else:
             root.left = self.insertIntoBST(root.left, val)
-        return root
+        return root 
 
-obj = Solution()
+obj = Solution() 
 
 root = TreeNode(4)
 root.left = TreeNode(2)
