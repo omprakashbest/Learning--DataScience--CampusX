@@ -1,5 +1,5 @@
 """
-->  Minimum Fuel Cost to Report to the Capital
+->  Minimum Fuel Cost to Report to the Capital 
 
 There is a tree (i.e., a connected, undirected graph with no cycle) structure country network consisting of n cities
 numbered form 0 to n - 1 and exactly n - 1 roads. The capital city is city 0. You are given a 2D integer array roads
@@ -12,10 +12,10 @@ There is a car in each city. You are given an integer seats that indicates the n
 A representative can use the car in their city to travel or change the car and ride with another representative.
 The cost of traveling between two cities is on liter of fuel.
 
-Return the minimum number of liters of fuel to reach the capital city.
+Return the minimum number of liters of fuel to reach the capital city. 
 """
 
-from collections import defaultdict
+from collections import defaultdict 
 import math
 
 class Solution:
@@ -37,10 +37,11 @@ class Solution:
             return passengers + 1
         res = 0
         dfs(0, -1)
-        return res 
+        
+        return res  
 
 obj = Solution()
-roads = [[0, 1], [0, 2], [0, 3]]
+roads = [[0, 1], [0, 2], [0, 3]] 
 seats = 5
-print(obj.minimumFuelCost(roads, seats))
+print(obj.minimumFuelCost(roads, seats)) 
 
