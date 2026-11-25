@@ -35,9 +35,7 @@ class Solution:
         return res
     
 
-# ----------------------
-# example tree
-# ----------------------
+# Example : 
 root = TreeNode(1)
 root.left = TreeNode(2)
 root.right = TreeNode(3)
