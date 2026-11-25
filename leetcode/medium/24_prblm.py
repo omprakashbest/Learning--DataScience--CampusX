@@ -15,8 +15,8 @@ This module defines a TreeNode and provides zigzagLevelOrder(root) which returns
 lists with the zigzag traversal.
 """
 
-from collections import deque
-from typing import List, Optional
+from collections import deque 
+from typing import List, Optional 
 
 class TreeNode:
     # Constructor
@@ -26,7 +26,7 @@ class TreeNode:
         self.right = right
 
 class Solution:
-    def zigzagLevelOrder(self, root: Optional[TreeNode]) -> List[List[int]]:
+    def zigzagLevelOrder(self, root: Optional[TreeNode]) -> List[List[int]]: 
         res = []
         q = deque([root] if root else [])
 
@@ -46,7 +46,7 @@ class Solution:
             res.append(level)
         return res
 
-obj = Solution()
+obj = Solution() 
 # Build the example tree and print the zigzag traversal
 #       3
 #     /   \
@@ -55,6 +55,6 @@ obj = Solution()
 #        15   7
 root = TreeNode(3)
 root.left = TreeNode(9)
-root.right = TreeNode(20, TreeNode(15), TreeNode(7))
+root.right = TreeNode(20, TreeNode(15), TreeNode(7)) 
 
-print(obj.zigzagLevelOrder(root))
+print(obj.zigzagLevelOrder(root)) 
