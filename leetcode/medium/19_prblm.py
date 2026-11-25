@@ -1,14 +1,14 @@
 """
--> Ones and Zeroes 
+-> Ones and Zeroes  
 
 You are given an array of binary strings strs and two integers m and n.
 return the size of the largest subset of strs such that there are at most m 0's and n 1's in the subset.
 A set x is a subset of a set y if all elements of x are also elements of y.
 
 """
-
+ 
 class Solution:
-    def findMaxForm(self, strs: list[str], m: int, n: int) -> int:
+    def findMaxForm(self, strs: list[str], m: int, n: int) -> int: 
         # memoization
         dp = {}
 
@@ -29,8 +29,8 @@ class Solution:
         
         return dfs(0, m, n)
     
-obj = Solution()
-strs = ["10","0001","111001","1","0"]
+obj = Solution() 
+strs = ["10","0001","111001","1","0"] 
 m = 5
 n = 3
-print(obj.findMaxForm(strs, m, n))
+print(obj.findMaxForm(strs, m, n)) 
