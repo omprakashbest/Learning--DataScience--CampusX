@@ -1,7 +1,7 @@
-"""
--> Shortest Path with Alternating Colors
+""" 
+-> Shortest Path with Alternating Colors 
 
-You are given an integer n, the number of nodes in a directed graph where the nodes are labeled from 0 to n - 1.
+You are given an integer n, the number of nodes in a directed graph where the nodes are labeled from 0 to n - 1. 
 Each edge is red or blue in this graph, and there could be self-edges and parallel edges.
 
 You are given two arrays redEdges and blueEdges where :
@@ -15,7 +15,7 @@ Return an array answer of length n, where each answer[x] is the length of the sh
 x such that the edge colors alternate along the path, or -1 if such a path does not exist.
 """
 
-from collections import defaultdict, deque
+from collections import defaultdict, deque 
 
 class Solution:
     def shortestAlternatingPaths(self, n: int, redEdges: list[list[int]], blueEdges: list[list[int]]) -> list[int]:
@@ -29,7 +29,7 @@ class Solution:
         
         answer = [-1 for _ in range(n)]
         q = deque()
-        q.append([0, 0, None]) # [Node, length, prev_edge_color]
+        q.append([0, 0, None]) # [Node, length, prev_edge_color] 
         visit = set()
         visit.add((0, None))
 
@@ -45,14 +45,14 @@ class Solution:
                         q.append([nei, length + 1, "RED"])
 
             if edgeColor != "BLUE":
-                for nei in blue[node]:
+                for nei in blue[node]: 
                     if (nei, "BLUE") not in visit:
                         visit.add((nei, "BLUE"))
                         q.append([nei, length + 1, "BLUE"])
         return answer
 
 # Example usage
-obj = Solution()
+obj = Solution() 
 n = 3
-redEdges, blueEdges = [[0,1],[1,2]], []
-print(obj.shortestAlternatingPaths(n, redEdges, blueEdges))
+redEdges, blueEdges = [[0,1],[1,2]], [] 
+print(obj.shortestAlternatingPaths(n, redEdges, blueEdges)) 
