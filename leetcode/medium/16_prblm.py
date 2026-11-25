@@ -1,5 +1,5 @@
 """
--> Maximum Twin Sum of a Linked List
+-> Maximum Twin Sum of a Linked List 
 
 In a Linked list of size n, where n is even, the ith node (0-indexed) of hte linked list is known as the twin
 of the (n-1-i)th node, if 0 <= i <= (n / 2) - 1.
@@ -16,7 +16,7 @@ Given the head of a linked list with even length, return the maximum twin sum of
 from typing import Optional
 
 class ListNode:
-    def __init__(self, val=0, next=None):
+    def __init__(self, val=0, next=None): 
         self.val = val
         self.next = next
 
@@ -39,10 +39,11 @@ class Solution:
             slow = slow.next
         return res
 
-obj = Solution()
+obj = Solution() 
+
 # Singly Linked list
 head = ListNode(5)
 head.next = ListNode(4)
 head.next.next = ListNode(2)
 head.next.next.next = ListNode(1)
-print(obj.pairSum(head))
+print(obj.pairSum(head)) 
