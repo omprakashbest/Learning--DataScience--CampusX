@@ -10,7 +10,7 @@ smallest space complexity possible.
 class Solution:
 
     # Merge Sort 
-    def sortArray(self, nums: list[int]) -> list[int]:
+    def sortArray(self, nums: list[int]) -> list[int]: 
 
         def mergeSort(arr, l, r):
             if l == r:
@@ -46,8 +46,8 @@ class Solution:
                 k += 1
                 i += 1
 
-        return mergeSort(nums, 0, len(nums) - 1)
+        return mergeSort(nums, 0, len(nums) - 1) 
 
-obj = Solution()
-nums = [5, 2, 3, 1]
-print(obj.sortArray(nums))
+obj = Solution() 
+nums = [5, 2, 3, 1] 
+print(obj.sortArray(nums)) 
