@@ -10,13 +10,15 @@ The score of a path between two cities is defined as the minimum distance of a r
 Return the minimum possible score of a path between cities 1 and n.
 
 Note:
-
 • A path is a sequence of roads between two cities.
+
 • It is allowed for a path to contain the same road multiple times, and you can visit cities 1 and n multiple 
     times along the path.
 • The test cases are generated such that there is at least one path between 1 and n.
 
 """
+
+from collections import defaultdict
 
 class Solution:
     def minScore(self, n: int, roads: list[list[int]]) -> int:
@@ -37,6 +39,12 @@ class Solution:
         res = float("inf") # infinity
         visit = set()
         dfs(1)
+        
         return res
+
+obj = Solution()
+n = 4
+roads = [[1,2,9],[2,3,6],[2,4,5],[1,4,7]]
+print(obj.minScore(n, roads))
     
         
