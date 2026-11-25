@@ -15,13 +15,13 @@ with the smallest index, and if no possible answer exists, return -1.
 Note that edges may contain cycles.
 """
 
-from collections import defaultdict, deque
+from collections import defaultdict, deque 
 
-class Solution:
-    def closestMeetingNode(self, edges: list[int], node1: int, node2: int)-> int:
-        adj = defaultdict(list)
-        for idx, val in enumerate(edges):
-            adj[idx].append(val)
+class Solution: 
+    def closestMeetingNode(self, edges: list[int], node1: int, node2: int)-> int: 
+        adj = defaultdict(list) 
+        for idx, val in enumerate(edges): 
+            adj[idx].append(val)  
 
         def bfs(src, distMap):
             q = deque()
@@ -47,8 +47,8 @@ class Solution:
                 if dist < resDist:
                     res = i
                     resDist = dist
-        return res
+        return res 
     
-obj = Solution()
-edges, node1, node2 = [2,2,3,-1], 0, 1
-print(obj.closestMeetingNode(edges, node1, node2))
+obj = Solution() 
+edges, node1, node2 = [2,2,3,-1], 0, 1 
+print(obj.closestMeetingNode(edges, node1, node2)) 
