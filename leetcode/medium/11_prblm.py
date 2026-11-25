@@ -11,18 +11,17 @@ level are as far last as possible. It can have between 1 and 2h nodes inclusive 
 from collections import deque
 from typing import Optional
 
-
 class TreeNode:
-    def __init__(self, val=0, left=None, right=None):
+    def __init__(self, val=0, left=None, right=None): 
         self.val = val
         self.left = left
-        self.right = right
+        self.right = right 
 
 class Solution:
-    def isCompleteTree(self, root: Optional[TreeNode]) -> bool:
+    def isCompleteTree(self, root: Optional[TreeNode]) -> bool: 
         q = deque([root])
 
-        while q: # Queue not empty
+        while q: # Queue not empty 
             # Remove front node
             node = q.popleft() 
 
@@ -34,8 +33,7 @@ class Solution:
                 while q:
                     if q.popleft():
                         return False
-        return True
-
+        return True 
 
 obj = Solution()
 root = [1, 2, 3, 4, 5, 6]
