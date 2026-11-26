@@ -23,5 +23,4 @@ class Solution:
     
 obj = Solution()
 nums = [1, 3]
-
 print(obj.subsetXORSum(nums))
