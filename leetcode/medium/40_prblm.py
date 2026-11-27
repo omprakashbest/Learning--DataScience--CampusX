@@ -15,9 +15,6 @@ Note:
 
 from collections import defaultdict
 
-from numpy import square
-
-
 class Solution:
     def isValidSudoku(self, board: list[list[str]]) -> bool:
         cols = defaultdict(set)
