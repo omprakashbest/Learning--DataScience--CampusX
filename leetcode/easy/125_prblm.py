@@ -20,7 +20,7 @@ class Solution:
                 profit = prices[r] - prices[l]
                 maxP = max(maxP, profit)
             else:
-                l += 1
+                l = r
             r += 1
         return maxP
     
